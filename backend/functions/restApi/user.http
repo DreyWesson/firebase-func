@@ -1,0 +1,25 @@
+# Use REST Client Extension VSCode
+
+@baseUrl = http://localhost:5000/fb-fullstack/us-central1/api
+@deployedBaseURL = https://us-central1-fb-fullstack.cloudfunctions.net/api
+
+### Signup
+POST {{deployedBaseURL}}/signup
+content-type: application/json
+
+{
+	"email": "yol@gmail.com",
+	"password": "password",
+	"confirmPassword": "password",
+	"handle": "yol"
+}
+
+### Login
+POST {{baseUrl}}/login
+content-type: application/json
+
+{
+	"email": "teflondon@gmail.com",
+	"password": "password"
+}
+
